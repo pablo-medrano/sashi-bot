@@ -1,0 +1,169 @@
+version: "3.0"
+nlu:
+- intent: saludo
+  examples: |
+    - Hola
+    - Holaaaa
+    - Que onda
+    - Que ondas
+    - Que tranza
+    - Como estas?
+    - Buenos dias
+    - Buenas noches
+    - Buenas tardes
+    - Que tal
+    - Saludos
+    - Holq
+    - qp
+    - Q onda
+    - Hey que tal
+    - Que tranza mijo
+- intent: goodbye
+  examples: |
+    - Bye
+    - Hasta luego
+    - Nos vemos
+    - Adios
+    - Chao
+    - Hasta pronto
+    - Hasta la proxima
+    - ¡Cuidate!
+    - Nos estamos viendo
+    - Sale
+    - Cuidate
+    - Arre, gracias
+    - arre, gracias
+- intent: opciones
+  examples: |
+    - Como puede ayudarme?
+    - Que puedes hacer?
+    - En que puedes ayudarme?
+    - Para que sirves?
+    - Que ayuda brindas?
+- intent: ubicacion
+  examples: |
+    - Donde te ubicas?
+    - Ubicacion?
+    - Donde se encuentran?
+- intent: puntomedio
+  examples: |
+    - Haces entrega en punto medio?
+    - Punto medio?
+    - Si entregas con punto medio?
+    - Donde entregas?
+- intent: cotizacion
+  examples: |
+    - Cuanto cobran de envio?
+    - Cuentan con envio?
+    - Hacen envio gratis?
+    - Realizan envios?
+    - No puedo ir a recoger el pedido me pueden enviar el paquete?
+    - Entregas a domicilio?
+    - Cobras por el envio?
+    - realizan envio?
+    - Si, me puedes decir si hacen envios?
+- intent: tiendafisica
+  examples: |
+    - Cuentan con tienda fisica?
+    - Tienen tienda fisica?
+    - Puedo ir a comprar en fisico?
+    - Quisiera saber si tienen tienda fisica
+    - Puedo ir a comprar directamente en una sucursal?
+    - Puedo ir a probarme las prendas?
+    - Puedo ver las prendas?
+    - En donde puedo ver las prendas?
+    - Ah, okey y cuentas con tienda fisica?
+- intent: espera
+  examples: |
+    - Cuanto tiempo tardan en llegar los pedidos?
+    - En cuanto tiempo llega la ropa?
+    - Tardan mucho en llegar los pedidos?
+    - Y cuanto tiempo se tarda en llegar la ropa?
+    - Super bien, y cuanto tiempo tardan en llegar los pedidos?
+- intent: anticipo
+  examples: |
+    - Cuanto cobran de anticipo?
+    - Hacen cobro de anticipo para pedir ropa?
+    - Ocupo dar un anticipo para hacer mi pedido?
+- intent: pago
+  examples: |
+    - Como puedo realizarle el pago?
+    - Puedo puedo pagar con paypal?
+    - Acepta transferencia?
+    - Por donde te pago?
+    - Y como te puedo pagar el adelanto?
+- intent: cierre
+  examples: |
+    - Hasta cuando tengo para hacerle el deposito por mi pedido?
+    - Tienen fecha limite para hacerles el pago?
+    - Hay fecha limite para pagar el anticipo?
+    - Haces pedidos?
+- intent: garantia
+  examples: |
+    - Cuentan con garantia?
+    - Tengo alguna proteccion o garantia al comprar con ustedes?
+    - Realizan rembolsos?
+    - Que pasa si mi ropa llega rota hay alguna garantia?
+    - Y cuentas con algun tipo de garantia?
+- intent: deny
+  examples: |
+    - no
+    - nunca
+    - no creo
+    - asi no
+    - de ninguna manera
+    - no realmente
+- intent: mood_great
+  examples: |
+    - perfecto
+    - grandioso
+    - asombroso
+    - feeling like a king
+    - maravilloso
+    - me siento muy bien
+    - estoy bien
+    - estoy genial
+    - voy a salvar el mundo
+    - extremadamente bien
+    - muy bien
+    - excelente
+- intent: mood_unhappy
+  examples: |
+    - mi día fue horrible
+    - estoy triste
+    - no me siento bien
+    - estoy decepcionado
+    - muy trsite
+    - estoy muy triste
+    - triste
+    - muy triste
+    - infeliz
+    - no estoy bien
+    - no muy bien
+    - extremadamente triste
+    - muuy triste
+    - demasiado triste
+- intent: bot_challenge
+  examples: |
+    - eres un bot?
+    - eres un robot?
+    - eres un humano?
+    - le estoy hablando a un bot?
+    - le estoy hablando a un rbot?
+    - le hablo a un bot?
+    - le hablo a un rbot?
+    - estoy hablando con un humano?
+- intent: encargo
+  examples: |
+    - Quisiera hacer un pedido de shein quiero comprar 3 blusas
+    - Estoy interesado en hacer un pedido de shein
+    - Me gustaria hacer un pedio por 2 camisas
+    - Quiero hacer un pedido, me ayudas porfa?
+    - Te puedo encargar unas cosas por shein?
+    - Me puedes ayudar a tomarme un pedido?
+    - Me podrias encargar unos prendas de shein?
+    - Oye quiero hacer un pedido por unos sueteres
+    - Ok, entonces me gustaria hacer un pedido por 2 camisas
+    - ah okey muy bien oye entonces quisiera pedir unas cosas
+    - Que onda man haces pedidos de shein?
+    - Me pues ayudar a realizar un pedido?

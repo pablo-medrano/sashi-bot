@@ -1,0 +1,94 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- saludo
+- cotizacion
+- encargo
+- espera
+- pago
+- tiendafisica
+- goodbye
+- puntomedio
+- garantia
+- ubicacion
+- opciones
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- anticipo
+- cierre
+responses:
+  utter_saludo:
+  - text: Hola.
+  - text: ¿En que puedo ayudarle?
+  - text: ¿Buenas puedo ayudarle en algo?
+  - text: Que pasa algo en que necesite ayuda.
+  - text: Alguna duda sobre una prenda o pedido de shein?
+  - text: Como te va, algo en que ocupes mi ayuda?
+  utter_cheer_up:
+  - text: 'Aqui tienes algo que te podria animar:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Eso te ayudo?
+  - text: Eso fue de ayuda?
+  - text: Si te sirvio?
+  utter_happy:
+  - text: ¡GANBARE!
+  - text: ¡Tu puedes!
+  - text: ¡Todo mejorara, deberas!
+  - text: Animate unas prendas nuevas, mejoran el animo a cualquiera
+  utter_goodbye:
+  - text: Hasta luego, un placer ayudarle.
+  - text: Espero poder volver ayudarle pronto.
+  - text: Hasta pronto, que tenga buen dia.
+  - text: Para servirle.
+  - text: Adios, con gusto lo vuelvo atender.
+  - text: Hasta pronto, que tenga buen dia.
+  - text: Para servirle.
+  utter_agradecimiento:
+  - text: No pasa nada, algo mas en lo que ocupe ayuda?
+  - text: El placer fue mio.
+  - text: De que agradece!
+  - text: Ntp, estoy feliz de ayudar.
+  - text: Cuando guste.
+  - text: No hay de que.
+  utter_opciones:
+  - text: Puedo ayudarle en saber si hacemos envios a domicilio, con que ubicaciones contamos para entrega, si contamos con punto medio,si tenemos tienda fisica, cuanto tardan los pedidos de shein en llegar, cuanto necesita dar de anticipo para realizar un pedido por shein, que pagos aceptamos y saber cuando cerramos pedido de shein.
+  utter_ubicacion:
+  - text: Tenemos dos ubicaciones para recoger los pedidos una es en la colonia Olivares y nuevo Hermosilo.
+  utter_puntomedio:
+  - text: Si claro hacemos entregas en unison los domingos de 1 a 3 de la tarde.
+  utter_cotizacion:
+  - text: Por supuesto que contamos con envios el costo de esto depende de cuanto cobre el didi, uber o cualquier compañia de envios locales y si se encuentra en el centro o sur de la ciudad podemos entregarles el pedido de cualquiera de las dos ubicaciones para que le salga mas economico el envio.
+  utter_tiendafisica:
+  - text: Lo siento, no contamos con tienda fisica, pero si gusta hacerme mas preguntas aqui estoy disponible.
+  utter_espera:
+  - text: Los pedidos usualmente tardar entre 3 a 4 semanas en llegar a nuestras manos y de ahi nos comunicamos con usted para ver como le haremos llegar su pedido
+  utter_anticipo:
+  - text: En cuestion de anticipos cobramos un 50% del total del pedido que desea realizar para poder realizar su pedido
+  utter_pago:
+  - text: Claro aceptamos pagos por transferencia, mercadopago, deposito por oxxo y paypal como mejor le resulte
+  utter_cierre:
+  - text: Todos nuestros pedidos los realizamos el domingo por la mañana asi que se tiene que hacer el deposito para mas tardar el sabado antes de las 10 PM
+  utter_garantia:
+  - text: Claro usted al momento de hacerme el deposito nos comprometemos a que el pedido le llegará a sus manos en el plazo establecido por Shein si pasa ese tiempo puede reclamar la devolucion de su dinero o esperar un poco mas a la entrega del pedido.
+  utter_iamabot:
+  - text: Soy una maquina programada para ayudarte y los fines de semana me dedico a ver peliculas en netflix.
+  utter_encargo:
+  - text: Muy bien gracias por su preferencia en un momento el encargado de pedidos tomara apunte de su pedido, por favor sea paciente.
+actions:
+- utter_cotizacion
+- utter_encargo
+- utter_espera
+- utter_garantia
+- utter_goodbye
+- utter_opciones
+- utter_pago
+- utter_puntomedio
+- utter_saludo
+- utter_tiendafisica
+- utter_ubicacion
