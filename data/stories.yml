@@ -1,0 +1,183 @@
+version: "3.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: interactive_story_1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: opciones
+  - action: utter_opciones
+  - intent: ubicacion
+  - action: utter_ubicacion
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_2
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: puntomedio
+  - action: utter_puntomedio
+  - intent: tiendafisica
+  - action: utter_tiendafisica
+  - intent: garantia
+  - action: utter_garantia
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_3
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: cotizacion
+  - action: utter_cotizacion
+  - intent: espera
+  - action: utter_espera
+  - intent: pago
+  - action: utter_pago
+  - intent: encargo
+  - action: utter_encargo
+
+- story: interactive_story_4
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: ubicacion
+  - action: utter_ubicacion
+  - intent: puntomedio
+  - action: utter_puntomedio
+  - intent: espera
+  - action: utter_espera
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_5
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: pago
+  - action: utter_pago
+  - intent: garantia
+  - action: utter_garantia
+  - intent: espera
+  - action: utter_espera
+  - intent: anticipo
+  - action: utter_anticipo
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_6
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: pago
+  - action: utter_pago
+  - intent: anticipo
+  - action: utter_anticipo
+  - intent: cierre
+  - action: utter_cierre
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_7
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: pago
+  - action: utter_pago
+  - intent: cierre
+  - action: utter_cierre
+  - intent: espera
+  - action: utter_espera
+  - intent: encargo
+  - action: utter_encargo
+
+- story: interactive_story_8
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: encargo
+  - action: utter_encargo
+
+- story: interactive_story_9
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: cierre
+  - action: utter_cierre
+  - intent: espera
+  - action: utter_espera
+  - intent: puntomedio
+  - action: utter_puntomedio
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_10
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: tiendafisica
+  - action: utter_tiendafisica
+  - intent: pago
+  - action: utter_pago
+  - intent: espera
+  - action: utter_espera
+  - intent: goodbye
+  - action: utter_goodbye
+- story: interactive_story_1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: cotizacion
+  - action: utter_cotizacion
+  - intent: espera
+  - action: utter_espera
+  - intent: encargo
+  - action: utter_encargo
+
+- story: interactive_story_1
+  steps:
+  - intent: encargo
+  - action: utter_encargo
+
+- story: interactive_story_1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: encargo
+  - action: utter_encargo
+
+- story: interactive_story_1
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: cotizacion
+  - action: utter_cotizacion
